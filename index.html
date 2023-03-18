@@ -5,11 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 101</title>
+
 </head>
-    <body>
+    <body style="background-color: black; color: yellow;">
         <h1>Welcome to HTML 101!</h1>
-        <p>My first paragragh tags.</p>
+        <h2>This is a subheadline</h2>
+        <h1>This is inner HTML</h1>
+        <h3>This is an even smaller headline</h3>
+        <h4>I'm an h4!</h4>
+        <h5>I'm an h5!</h5>
+        <h6>I'm the smallest headline</h6>
+        <p>I'm the first paragraph tag.</p>
+        <p>I'm the 2nd most important paragraph</p>
 
+        <a href="https://codyalejo.com/" target="_blank">My portfolio website</a>
+        <a href="https://www.outerlimitsentmt.com/" target="_blank">This is a website I built</a>
 
+        <p>Link to Googlea: <a href="https://google.com">Google.com</a></p>
+
+        <img id="img" width="600px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="pokemon logo">
+        <audio id="audio" src="https://vgmsite.com/soundtracks/pokemon-game-boy-pok-mon-sound-complete-set-play-cd/vfywpihuos/1-01.%20Opening.mp3"></audio>
+
+        <script>
+            var audio = document.getElementById("audio");
+            var img = document.getElementById("img");
+            
+            function play() {
+              audio.play();
+            }
+            
+            function stop() {
+              audio.pause();
+            }
+            
+            img.addEventListener('click', play);
+            img.addEventListener('mouseover', play);
+            img.addEventListener('mouseout', stop);
+          </script>
     </body>
 </html>
